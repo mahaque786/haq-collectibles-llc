@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our collection of rare and vintage collectibles - coins, currency, books, cards, and more.">
+  <title>Collection Gallery | Haq Collectibles LLC</title>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=Source+Sans+3:wght@400;500;600&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container">
+      <div class="header-inner">
+        <a href="index.html" class="logo">
+          <span class="logo-text">Haq <span>Collectibles</span></span>
+        </a>
+        
+        <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        
+        <nav class="main-nav">
+          <ul class="nav-list">
+            <li><a href="index.html" class="nav-link">Home</a></li>
+            <li><a href="about.html" class="nav-link">About</a></li>
+            <li><a href="services.html" class="nav-link">Services</a></li>
+            <li><a href="categories.html" class="nav-link">Categories</a></li>
+            <li><a href="collection.html" class="nav-link active">Collection</a></li>
+            <li><a href="how-it-works.html" class="nav-link">How It Works</a></li>
+            <li><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <h1>Our Collection</h1>
+      <p class="lead">Browse photographs from our current and past inventory.</p>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="collection-gallery">
+    <div class="container container--wide">
+      <!-- Gallery will be populated by JavaScript -->
+      <div id="collection-gallery">
+        <div class="loading">
+          <div class="loading-spinner"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Section -->
+  <section class="section--alt">
+    <div class="container container--narrow text-center">
+      <h2>Interested in Something You See?</h2>
+      <p class="lead" style="margin-bottom: var(--space-md);">
+        Many items in our collection are available for purchase. Contact us for pricing, 
+        availability, and detailed condition information.
+      </p>
+      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn--primary">Contact Us</a>
+        <a href="services.html#procurement" class="btn btn--secondary">Request Specific Items</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Setup Instructions (can be removed in production) -->
+  <section class="content-section" id="setup-instructions">
+    <div class="container container--narrow">
+      <h2>📋 Gallery Setup Instructions</h2>
+      <p>
+        This gallery automatically displays images from your <code>collection</code> folder. 
+        Here's how to add your images:
+      </p>
+      
+      <h4>Option 1: Using a JSON Manifest (Recommended)</h4>
+      <p>Create a file called <code>collection/images.json</code> with this format:</p>
+      <pre style="background: var(--color-cream-dark); padding: 1rem; border-radius: var(--radius-md); overflow-x: auto; font-size: 0.85rem;"><code>{
+  "images": [
+    {
+      "filename": "coin-1921-morgan-dollar.jpg",
+      "title": "1921 Morgan Silver Dollar",
+      "category": "coins",
+      "description": "Uncirculated condition"
+    },
+    {
+      "filename": "book-hemingway-first-edition.jpg",
+      "title": "Hemingway First Edition",
+      "category": "books"
+    }
+  ]
+}</code></pre>
+      
+      <h4>Option 2: Using GitHub API (Auto-detection)</h4>
+      <p>Edit <code>js/collection.js</code> and set:</p>
+      <pre style="background: var(--color-cream-dark); padding: 1rem; border-radius: var(--radius-md); overflow-x: auto; font-size: 0.85rem;"><code>const CONFIG = {
+  USE_GITHUB_API: true,
+  GITHUB_REPO: 'your-username/haq-collectibles',
+  // ... rest of config
+};</code></pre>
+      
+      <h4>Naming Convention for Auto-categorization</h4>
+      <p>If using GitHub API mode, name your files with a category prefix for automatic filtering:</p>
+      <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+        <li><code>coins-1921-morgan.jpg</code> → Category: Coins</li>
+        <li><code>books-hemingway.jpg</code> → Category: Books</li>
+        <li><code>cards-pokemon-charizard.jpg</code> → Category: Cards</li>
+      </ul>
+      
+      <p style="color: var(--color-charcoal-light); font-style: italic; margin-top: var(--space-md);">
+        Note: You can remove this instructions section from the HTML once you have your gallery set up.
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <span class="logo-text">Haq <span>Collectibles</span></span>
+          <p>Trusted experts in rare and vintage collectibles. Serving collectors, estates, and institutions with integrity and expertise.</p>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Services</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#buy">Buy From Us</a></li>
+            <li><a href="services.html#sell">Sell to Us</a></li>
+            <li><a href="services.html#consign">Consignment</a></li>
+            <li><a href="services.html#procurement">Procurement</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Categories</h4>
+          <ul class="footer-links">
+            <li><a href="categories.html#coins">Coins</a></li>
+            <li><a href="categories.html#currency">Currency</a></li>
+            <li><a href="categories.html#books">Books</a></li>
+            <li><a href="categories.html#cards">Trading Cards</a></li>
+          </ul>
+        </div>
+        
+        <div>
+          <h4 class="footer-heading">Company</h4>
+          <ul class="footer-links">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="how-it-works.html">How It Works</a></li>
+            <li><a href="insights.html">Insights</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2024 Haq Collectibles LLC. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="policies.html#privacy">Privacy Policy</a>
+          <a href="policies.html#terms">Terms of Service</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+  <script src="js/collection.js"></script>
+</body>
+</html>
