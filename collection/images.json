@@ -1,0 +1,28 @@
+{
+  "images": [
+    {
+      "filename": "sample-coin-morgan-dollar.jpg",
+      "title": "1921 Morgan Silver Dollar",
+      "category": "coins",
+      "description": "Example coin - replace with your own"
+    },
+    {
+      "filename": "sample-currency-silver-certificate.jpg",
+      "title": "1935 Silver Certificate",
+      "category": "currency",
+      "description": "Example currency - replace with your own"
+    },
+    {
+      "filename": "sample-book-first-edition.jpg",
+      "title": "First Edition Example",
+      "category": "books",
+      "description": "Example book - replace with your own"
+    },
+    {
+      "filename": "sample-card-vintage.jpg",
+      "title": "Vintage Trading Card",
+      "category": "cards",
+      "description": "Example card - replace with your own"
+    }
+  ]
+}
