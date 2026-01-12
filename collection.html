@@ -47,87 +47,12 @@
     </div>
   </header>
 
-  <!-- Page Header -->
-  <section class="page-header">
-    <div class="container">
-      <h1>Our Collection</h1>
-      <p class="lead">Browse photographs from our current and past inventory.</p>
-    </div>
-  </section>
-
-  <!-- Gallery Section -->
-  <section class="collection-gallery">
-    <div class="container container--wide">
-      <!-- Gallery will be populated by JavaScript -->
-      <div id="collection-gallery">
-        <div class="loading">
-          <div class="loading-spinner"></div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Info Section -->
-  <section class="section--alt">
-    <div class="container container--narrow text-center">
-      <h2>Interested in Something You See?</h2>
-      <p class="lead" style="margin-bottom: var(--space-md);">
-        Many items in our collection are available for purchase. Contact us for pricing, 
-        availability, and detailed condition information.
-      </p>
-      <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
-        <a href="contact.html" class="btn btn--primary">Contact Us</a>
-        <a href="services.html#procurement" class="btn btn--secondary">Request Specific Items</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- Setup Instructions (can be removed in production) -->
-  <section class="content-section" id="setup-instructions">
-    <div class="container container--narrow">
-      <h2>📋 Gallery Setup Instructions</h2>
-      <p>
-        This gallery automatically displays images from your <code>collection</code> folder. 
-        Here's how to add your images:
-      </p>
-      
-      <h4>Option 1: Using a JSON Manifest (Recommended)</h4>
-      <p>Create a file called <code>collection/images.json</code> with this format:</p>
-      <pre style="background: var(--color-cream-dark); padding: 1rem; border-radius: var(--radius-md); overflow-x: auto; font-size: 0.85rem;"><code>{
-  "images": [
-    {
-      "filename": "coin-1921-morgan-dollar.jpg",
-      "title": "1921 Morgan Silver Dollar",
-      "category": "coins",
-      "description": "Uncirculated condition"
-    },
-    {
-      "filename": "book-hemingway-first-edition.jpg",
-      "title": "Hemingway First Edition",
-      "category": "books"
-    }
-  ]
-}</code></pre>
-      
-      <h4>Option 2: Using GitHub API (Auto-detection)</h4>
-      <p>Edit <code>js/collection.js</code> and set:</p>
-      <pre style="background: var(--color-cream-dark); padding: 1rem; border-radius: var(--radius-md); overflow-x: auto; font-size: 0.85rem;"><code>const CONFIG = {
-  USE_GITHUB_API: true,
-  GITHUB_REPO: 'your-username/haq-collectibles',
-  // ... rest of config
-};</code></pre>
-      
-      <h4>Naming Convention for Auto-categorization</h4>
-      <p>If using GitHub API mode, name your files with a category prefix for automatic filtering:</p>
-      <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
-        <li><code>coins-1921-morgan.jpg</code> → Category: Coins</li>
-        <li><code>books-hemingway.jpg</code> → Category: Books</li>
-        <li><code>cards-pokemon-charizard.jpg</code> → Category: Cards</li>
-      </ul>
-      
-      <p style="color: var(--color-charcoal-light); font-style: italic; margin-top: var(--space-md);">
-        Note: You can remove this instructions section from the HTML once you have your gallery set up.
-      </p>
+  <!-- Work in Progress -->
+  <section class="page-header" style="min-height: 60vh; display: flex; align-items: center; justify-content: center;">
+    <div class="container text-center">
+      <h1>Work in Progress</h1>
+      <p class="lead">Our collection gallery is coming soon. Check back later!</p>
+      <a href="index.html" class="btn btn--primary" style="margin-top: 1.5rem;">Back to Home</a>
     </div>
   </section>
 
@@ -183,6 +108,5 @@
 
   <!-- Scripts -->
   <script src="js/main.js"></script>
-  <script src="js/collection.js"></script>
 </body>
 </html>
