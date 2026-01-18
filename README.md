@@ -51,8 +51,11 @@ haq-collectibles/
 ├── collection/
 │   └── images.json         # Gallery image manifest
 ├── images/                 # Site images (logo, favicon, etc.)
+├── CONTACT_PAGE_STRUCTURE.md  # Detailed contact page documentation
 └── README.md               # This file
 ```
+
+> 📖 For a detailed explanation of the contact page structure, see [CONTACT_PAGE_STRUCTURE.md](CONTACT_PAGE_STRUCTURE.md)
 
 ## 🖼️ Setting Up the Collection Gallery
 
