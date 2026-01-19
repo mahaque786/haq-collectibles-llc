@@ -1029,6 +1029,56 @@ section {
   }
 }
 
+/* ---------- Collapsible Sections ---------- */
+.collapsible-toggle {
+  width: 100%;
+  text-align: left;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  transition: color var(--transition-fast);
+  margin-bottom: var(--space-md);
+}
+
+.collapsible-toggle:hover {
+  color: var(--color-gold-muted);
+}
+
+.collapsible-toggle h2 {
+  display: inline;
+  margin: 0;
+}
+
+.collapsible-icon {
+  font-size: 1rem;
+  transition: transform var(--transition-base);
+  flex-shrink: 0;
+}
+
+.collapsible-toggle.active .collapsible-icon {
+  transform: rotate(-180deg);
+}
+
+.collapsible-content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height var(--transition-slow), opacity var(--transition-fast), visibility 0s var(--transition-slow);
+}
+
+.collapsible-content.active {
+  /* Large max-height for smooth animation - sufficient for embedded forms */
+  max-height: 10000px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height var(--transition-slow), opacity var(--transition-fast), visibility 0s 0s;
+}
+
 @media (max-width: 480px) {
   :root {
     --space-lg: 3rem;
