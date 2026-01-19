@@ -1066,12 +1066,17 @@ section {
 .collapsible-content {
   max-height: 0;
   overflow: hidden;
-  transition: max-height var(--transition-slow);
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height var(--transition-slow), opacity var(--transition-fast), visibility 0s var(--transition-slow);
 }
 
 .collapsible-content.active {
   /* Large max-height for smooth animation - sufficient for embedded forms */
   max-height: 10000px;
+  opacity: 1;
+  visibility: visible;
+  transition: max-height var(--transition-slow), opacity var(--transition-fast), visibility 0s 0s;
 }
 
 @media (max-width: 480px) {
