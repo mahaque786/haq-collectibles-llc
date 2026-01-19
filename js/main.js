@@ -176,6 +176,21 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
   
+  // Collapsible sections functionality
+  const collapsibleToggles = document.querySelectorAll('.collapsible-toggle');
+  
+  collapsibleToggles.forEach(toggle => {
+    toggle.addEventListener('click', function() {
+      const targetId = this.dataset.target;
+      const content = document.getElementById(targetId);
+      
+      if (content) {
+        this.classList.toggle('active');
+        content.classList.toggle('active');
+      }
+    });
+  });
+  
 });
 
 // Utility function to format file names into titles

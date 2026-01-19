@@ -108,21 +108,26 @@
         
         <!-- Quick Contact Form -->
         <div>
-          <h2>Quick Contact</h2>
-          <p>For general inquiries, use this form:</p>
-          
-          <div class="form-embed" id="general-form">
-            <iframe 
-              src="https://docs.google.com/forms/d/e/1FAIpQLSf60A8vVbqKIq46Bm_ukyOih-A9W-4SQ6Hrxw6lrbSSpJ-KRg/viewform?embedded=true" 
-              width="100%" 
-              height="1479" 
-              frameborder="0" 
-              marginheight="0" 
-              marginwidth="0"
-              style="border: none; min-height: 1479px;"
-              title="General Contact Form">
-              Loading…
-            </iframe>
+          <button class="collapsible-toggle" data-target="general-form-content">
+            <span class="collapsible-icon">▼</span>
+            <h2 style="display: inline; margin: 0;">Quick Contact</h2>
+          </button>
+          <div class="collapsible-content" id="general-form-content">
+            <p>For general inquiries, use this form:</p>
+            
+            <div class="form-embed" id="general-form">
+              <iframe 
+                src="https://docs.google.com/forms/d/e/1FAIpQLSf60A8vVbqKIq46Bm_ukyOih-A9W-4SQ6Hrxw6lrbSSpJ-KRg/viewform?embedded=true" 
+                width="100%" 
+                height="1479" 
+                frameborder="0" 
+                marginheight="0" 
+                marginwidth="0"
+                style="border: none; min-height: 1479px;"
+                title="General Contact Form">
+                Loading…
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
@@ -132,26 +137,31 @@
   <!-- Sell/Consign Form -->
   <section id="sell-form" class="content-section section--alt">
     <div class="container container--narrow">
-      <h2>📦 Sell or Consign Items</h2>
-      <p>
-        Ready to sell or consign? Use this form to submit your items for evaluation. 
-        Include clear photos and as much information as you have. We'll get back to you 
-        with a preliminary assessment.
-      </p>
-      
-      <div class="form-embed" style="margin-top: var(--space-md);">
-        <script type="text/javascript" src="https://form.jotform.com/jsform/260143875565059"></script>
-      </div>
-      
-      <div style="margin-top: var(--space-md); padding: var(--space-md); background: var(--color-cream); border-radius: var(--radius-md);">
-        <h4>Tips for Better Evaluations:</h4>
-        <ul style="margin-left: 1.5rem; margin-bottom: 0;">
-          <li style="margin-bottom: 0.5rem;">Include clear, well-lit photos of the front and back</li>
-          <li style="margin-bottom: 0.5rem;">Photograph any damage, wear, or notable features</li>
-          <li style="margin-bottom: 0.5rem;">Include a size reference (coin next to a ruler, etc.)</li>
-          <li style="margin-bottom: 0.5rem;">Tell us anything you know about where the item came from</li>
-          <li style="margin-bottom: 0;">Don't clean or alter items before evaluation</li>
-        </ul>
+      <button class="collapsible-toggle" data-target="sell-form-content">
+        <span class="collapsible-icon">▼</span>
+        <h2 style="display: inline; margin: 0;">📦 Sell or Consign Items</h2>
+      </button>
+      <div class="collapsible-content" id="sell-form-content">
+        <p>
+          Ready to sell or consign? Use this form to submit your items for evaluation. 
+          Include clear photos and as much information as you have. We'll get back to you 
+          with a preliminary assessment.
+        </p>
+        
+        <div class="form-embed" style="margin-top: var(--space-md);">
+          <script type="text/javascript" src="https://form.jotform.com/jsform/260143875565059"></script>
+        </div>
+        
+        <div style="margin-top: var(--space-md); padding: var(--space-md); background: var(--color-cream); border-radius: var(--radius-md);">
+          <h4>Tips for Better Evaluations:</h4>
+          <ul style="margin-left: 1.5rem; margin-bottom: 0;">
+            <li style="margin-bottom: 0.5rem;">Include clear, well-lit photos of the front and back</li>
+            <li style="margin-bottom: 0.5rem;">Photograph any damage, wear, or notable features</li>
+            <li style="margin-bottom: 0.5rem;">Include a size reference (coin next to a ruler, etc.)</li>
+            <li style="margin-bottom: 0.5rem;">Tell us anything you know about where the item came from</li>
+            <li style="margin-bottom: 0;">Don't clean or alter items before evaluation</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -159,26 +169,31 @@
   <!-- Procurement Form -->
   <section id="procurement-form" class="content-section">
     <div class="container container--narrow">
-      <h2>🔍 Procurement Request</h2>
-      <p>
-        Looking for something specific? Tell us what you're searching for and we'll 
-        tap our network to find it. The more details you provide, the better we can 
-        match your needs.
-      </p>
-      
-      <div class="form-embed" style="margin-top: var(--space-md);">
-        <script type="text/javascript" src="https://form.jotform.com/jsform/260144140393044"></script>
-      </div>
-      
-      <div style="margin-top: var(--space-md); padding: var(--space-md); background: var(--color-cream-dark); border-radius: var(--radius-md);">
-        <h4>What to Include in Your Request:</h4>
-        <ul style="margin-left: 1.5rem; margin-bottom: 0;">
-          <li style="margin-bottom: 0.5rem;">Be as specific as possible (dates, mintmarks, editions, etc.)</li>
-          <li style="margin-bottom: 0.5rem;">Specify minimum acceptable condition</li>
-          <li style="margin-bottom: 0.5rem;">Let us know your budget range</li>
-          <li style="margin-bottom: 0.5rem;">Tell us if you need graded/certified items only</li>
-          <li style="margin-bottom: 0;">Mention any items you're NOT interested in (variants, etc.)</li>
-        </ul>
+      <button class="collapsible-toggle" data-target="procurement-form-content">
+        <span class="collapsible-icon">▼</span>
+        <h2 style="display: inline; margin: 0;">🔍 Procurement Request</h2>
+      </button>
+      <div class="collapsible-content" id="procurement-form-content">
+        <p>
+          Looking for something specific? Tell us what you're searching for and we'll 
+          tap our network to find it. The more details you provide, the better we can 
+          match your needs.
+        </p>
+        
+        <div class="form-embed" style="margin-top: var(--space-md);">
+          <script type="text/javascript" src="https://form.jotform.com/jsform/260144140393044"></script>
+        </div>
+        
+        <div style="margin-top: var(--space-md); padding: var(--space-md); background: var(--color-cream-dark); border-radius: var(--radius-md);">
+          <h4>What to Include in Your Request:</h4>
+          <ul style="margin-left: 1.5rem; margin-bottom: 0;">
+            <li style="margin-bottom: 0.5rem;">Be as specific as possible (dates, mintmarks, editions, etc.)</li>
+            <li style="margin-bottom: 0.5rem;">Specify minimum acceptable condition</li>
+            <li style="margin-bottom: 0.5rem;">Let us know your budget range</li>
+            <li style="margin-bottom: 0.5rem;">Tell us if you need graded/certified items only</li>
+            <li style="margin-bottom: 0;">Mention any items you're NOT interested in (variants, etc.)</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
