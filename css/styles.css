@@ -934,6 +934,44 @@ section {
   border: 0;
 }
 
+/* ---------- RFP Section ---------- */
+.rfp-item {
+  margin-bottom: var(--space-xl);
+}
+
+.rfp-item:last-child {
+  margin-bottom: 0;
+}
+
+.rfp-item h2 {
+  margin-bottom: var(--space-sm);
+}
+
+.rfp-item p {
+  color: var(--color-charcoal-light);
+  margin-bottom: var(--space-md);
+}
+
+.rfp-pdf-container {
+  background-color: var(--color-ivory);
+  border: 1px solid var(--color-cream-dark);
+  border-radius: var(--radius-md);
+  overflow: hidden;
+}
+
+.rfp-pdf-container iframe {
+  width: 100%;
+  height: 800px;
+  border: none;
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .rfp-pdf-container iframe {
+    height: 500px;
+  }
+}
+
 /* ---------- Loading State ---------- */
 .loading {
   display: flex;
