@@ -921,6 +921,7 @@ section {
 .mb-sm { margin-bottom: var(--space-sm); }
 .mb-md { margin-bottom: var(--space-md); }
 .mb-lg { margin-bottom: var(--space-lg); }
+.ml-sm { margin-left: var(--space-sm); }
 
 .visually-hidden {
   position: absolute;
